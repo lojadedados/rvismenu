@@ -25,6 +25,7 @@ fluidPage(
   # add custom JS and CSS
   singleton(
     tags$head(
+      includeScript(file.path('www', 'google-analytics.js')),
       includeScript(file.path('www', 'message-handler.js')),
       includeScript(file.path('www', 'helper-script.js')),
       includeCSS(file.path('www', 'style.css')),

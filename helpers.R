@@ -26,7 +26,8 @@ getGrafico <- function(df) {
   saida <-
     formattable(df, list(
       name = formatter("span", style = x ~ style(tooltiptext  = getURL(df,x))),
-      relevance = formatter("span", style = x ~ ifelse( (x == "very high" || x == "high")   , 
+      
+      relevance = formatter("span", style = x ~ ifelse( grepl("high", x), # "high" ou "very high"
                                                        style(color = "green", font.weight = "bold"), 
                                                        style(color = "red", font.weight = "bold"))),
       updating_frequency = formatter("span", style = x ~ ifelse(x == "constantly", 
@@ -47,7 +48,7 @@ getGrafico <- function(df) {
 getGraficoTable <- function(df) {
   saida <-
     formattable(df, list(
-      relevance = formatter("span", style = x ~ ifelse( (x == "very high" || x == "high"), 
+              relevance =  formatter("span", style = x ~ ifelse( grepl("high", x), # "high" ou "very high"
                                                         style(color = "green", font.weight = "bold"), 
                                                         style(color = "red", font.weight = "bold"))),
       
