@@ -47,13 +47,7 @@ fluidPage(
       tags$meta(name = "twitter:image", content = share$image)
     )
   ),
-  tags$a(
-    href = "https://github.com/lojadedados/rvismenu",
-    tags$img(style = "position: absolute; top: 0; right: 0; border: 0;",
-             src = "github-green-right.png",
-             alt = "Fork me on GitHub")
-  ),
-	
+  
 	# enclose the header in its own section to style it nicer
 	div(id = "headerSection",
 		h1("RVisMenu - R Visualizations"),
@@ -64,10 +58,10 @@ fluidPage(
 #			span("Developed by "),
 #			a("Rodrigo Almeida (rodrigo.almeida@gmail.com)", href = "https://lojadedados.github.io/"),
 #			HTML("&bull;"),
-			span("Code"),
-			a("on GitHub", href = "https://github.com/lojadedados/rvismenu"),
-                        HTML("&bull;"),
-                        a("More apps", href = "https://github.com/lojadedados"), "by Loja de Dados",
+#			span("Code"),
+#			a("on GitHub", href = "https://github.com/lojadedados/rvismenu"),
+#                       HTML("&bull;"),
+                        a("More apps", href = "http://www.lojadedados.com.br"), "by Loja de Dados",
 			br(),
       span("A subset of the available R Visualization Packages. Feel free to contribute and suggest another R Vis packages."),
       br(),
@@ -115,10 +109,10 @@ fluidPage(
 				br(), br(), br(), br(),
 				p("This Shiny App was Developed by ",
 					a("Loja de Dados",
-						href = "https://lojadedados.github.io/",
+						href = "http://www.lojadedados.com.br",
 						target = "_blank")),
 				a(img(src = "LOGOPNG.png", alt = "Loja de Dados"),
-					href = "https://lojadedados.github.io/",
+					href = "http://www.lojadedados.com.br",
 					target = "_blank")
 			),
 			
